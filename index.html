@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="calculator" id="calculator">
-            <div id="display" class="calculator-display">0</div>
+            <input id="display" class="calculator-display" readonly>
             <div class="btn-container" id="keys">
                 <button class="btn operator" onclick="appendtodisplay('+')">+</button>
                 <button class="btn" onclick="appendtodisplay('7')">7</button>
@@ -25,7 +25,7 @@
                 <button class="btn" onclick="appendtodisplay('0')">0</button>
                 <button class="btn" onclick="appendtodisplay('.')">.</button>
                 <button class="btn" onclick="calculate()" style="background-color: #5e5e5e;">=</button>
-                <button class="btn operator" onclick="clear()">C</button>
+                <button class="btn operator" onclick="clearDisplay()">C</button>
             </div>
 
         <script src="script.js"></script>

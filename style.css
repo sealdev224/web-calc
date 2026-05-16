@@ -29,6 +29,8 @@ body {
     box-sizing: border-box;
     color: white;
     font-weight: bolder;
+    border: transparent 0px solid;
+    outline: transparent 0px solid !important;
 }
 
 #keys {
