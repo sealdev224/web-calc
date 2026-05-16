@@ -3,53 +3,32 @@
     <head>
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.png">
+        <link rel="icon" href="icon.svg">
     </head>
     <body>
-<!--genuinally the dumbest and worst looking calcualtor ever but it works and I'll revise it later-->
-        <div class="calculator-div">
-            <table class="calculator-buttons">
-
-                <tr class="cal-row">
-                    <td colspan="4" class="cal-display" id="display">0</td>
-                </tr>
-                <tr class="cal-row">
-                    <td class="buttonvr" id="delete">D</td>
-                    <td class="buttonvr" id="reset">R</td>
-                    <td class="buttonvr" id="average">%</td>
-                    <td class="buttonvr" id="divide">/</td>
-                </tr>
-                <tr class="cal-row">
-                    <td class="buttonvr" id="seven">7</td>
-                    <td class="buttonvr" id="eight">8</td>
-                    <td class="buttonvr" id="nine">9</td>
-                    <td class="buttonvr" id="multiply">*</td>
-                </tr>
-                <tr class="cal-row">
-                    <td class="buttonvr" id="four">4</td>
-                    <td class="buttonvr" id="five">5</td>
-                    <td class="buttonvr" id="six">6</td>
-                    <td class="buttonvr" id="subtract">-</td>
-                </tr>
-                <tr class="cal-row">
-                    <td class="buttonvr" id="one">1</td>
-                    <td class="buttonvr" id="two">2</td>
-                    <td class="buttonvr" id="three">3</td>
-                    <td class="buttonvr" id="add">+</td>
-                </tr>
-                <tr class="cal-row">
-                    <td colspan="2" class="buttonvr" id="filler">F</td>
-                    <td colspan="2" class="buttonvr" id="zero">0</td>
-                    <td class="buttonvr" id="decimal">.</td>
-                    <td class="buttonvr" id="equals">=</td>
-                </tr>
-            </table>
-        </div>
-
-        <footer>
-            Calculator go vroom vrrrom | not meant to be stylish but for a time of bordom
-        </footer>
+        <div class="calculator" id="calculator">
+            <div id="display" class="calculator-display">0</div>
+            <div class="btn-container" id="keys">
+                <button class="btn operator" onclick="appendtodisplay('+')">+</button>
+                <button class="btn" onclick="appendtodisplay('7')">7</button>
+                <button class="btn" onclick="appendtodisplay('8')">8</button>
+                <button class="btn" onclick="appendtodisplay('9')">9</button>
+                <button class="btn operator" onclick="appendtodisplay('-')">-</button>
+                <button class="btn" onclick="appendtodisplay('4')">4</button>
+                <button class="btn" onclick="appendtodisplay('5')">5</button>
+                <button class="btn" onclick="appendtodisplay('6')">6</button>
+                <button class="btn operator" onclick="appendtodisplay('*')">*</button>
+                <button class="btn" onclick="appendtodisplay('1')">1</button>
+                <button class="btn" onclick="appendtodisplay('2')">2</button>
+                <button class="btn" onclick="appendtodisplay('3')">3</button>
+                <button class="btn operator" onclick="appendtodisplay('/')">/</button>
+                <button class="btn" onclick="appendtodisplay('0')">0</button>
+                <button class="btn" onclick="appendtodisplay('.')">.</button>
+                <button class="btn" onclick="calculate()" style="background-color: #5e5e5e;">=</button>
+                <button class="btn operator" onclick="clear()">C</button>
+            </div>
 
         <script src="script.js"></script>
     </body>
 </html>
+
