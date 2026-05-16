@@ -4,6 +4,13 @@ const calculator = document.getElementById('calculator');
 const display = document.getElementById('display');
 const buttons = calculator.querySelectorAll('button');
 
+document.addEventListener('keydown', (event) => {
+    if (event.key === "Enter") {
+        calculate();
+    }
+});
+
+
 function appendtodisplay(input) {
     display.value += input;
 }
