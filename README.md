@@ -1,3 +1,5 @@
 # web-calc
 
-Just for a first repo on github I wanna make a calculator on this new account so yeah :D "aka I lost my 6 year old github account :("
+For my first github repo on this account I want to start it off with something simple so a web calculator will do it
+
+"I lost my 6 year old github account :("
